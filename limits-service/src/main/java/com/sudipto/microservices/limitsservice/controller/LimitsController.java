@@ -18,7 +18,7 @@ public class LimitsController {
 	
 	@GetMapping("/get-limits")
 	public LimitsConfigurationBean getLimitsConfiguration() {
-		log.info("inside getLimitsConfiguration controller..");
+		log.info("-->inside getLimitsConfiguration controller..");
 		return new LimitsConfigurationBean(config.getMax(),config.getMin());
 	}
 }
