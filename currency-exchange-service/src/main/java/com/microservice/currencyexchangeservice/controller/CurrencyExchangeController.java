@@ -34,10 +34,10 @@ public class CurrencyExchangeController {
 		ExchangeBeanEntity ent = repo.findByFromAndTo(from, to);
 		
 		if (ent != null) {
-			log.info("entity found!");
+			log.info("Entity found!");
 			BeanUtils.copyProperties(ent, bean);
 		} else
-			log.info("entity NOT found!");
+			log.info("Entity NOT found!");
 			
 		
 		int portName = Integer.parseInt(env.getProperty("local.server.port"));
